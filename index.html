@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ruth Zhang – Computer Science Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav aria-label="Main">
+    <a class="brand" href="#home" data-go="home">Ruth Zhang</a>
+    <a class="link" href="#about" data-go="about">About</a>
+    <a class="link" href="#experience" data-go="experience">Experience</a>
+    <a class="link" href="#projects" data-go="projects">Projects</a>
+    <a class="link" href="#gallery" data-go="gallery">Gallery</a>
+    <a class="link" href="#contact" data-go="contact">Contact</a>
+    <button id="theme" type="button" aria-label="Toggle light and dark theme">◐</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div>
+      <h1>Hi, I'm Ruth Zhang</h1>
+      <p class="lead">I’m a first-year computer science student who is interested in front-end software development, machine learning, AI and data science.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects" data-go="projects">See my projects</a>
+        <a class="btn" href="#contact" data-go="contact">Get in touch</a>
+      </div>
+      <div class="stats">
+        <div><b>3.8</b>GPA</div>
+        <div><b>4+</b>Projects built</div>
+        <div><b>2026</b>Seeking internships</div>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="public/portrait.jpeg" alt="Portrait of Ruth Zhang">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <img data-ph="wide" alt="Alex working at a desk">
+    <div>
+      <h2>About me</h2>
+      <p>My interest in tech first started when I was in grade 10, where I participated in the Technovation Girls Challenge. Through the competition, 
+        I met likeminded peers, and fell in love with the problem solving aspect in programming. With tech, I felt I can make a difference to the world using my power for the first time. 
+        I'm currently studying computer science at the University of Toronto St. George. I'm interested in working in front-end development, machine learning, AI or data science roles. Although I don't have much experience, I'm always keen to learn new skills.</p>
+      <p>Outside of class, I've participated in NPO hosting high school hackathons, tutor high school students, and contribute to my local community through volunteering. I also love horseback riding, traveling, playing badminton, and skiing.I’m always happy to talk about new ideas or collaborate on something fun.</p>
+      <ul class="skills" aria-label="Skills">
+        <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Java</li><li>SQL</li><li>Git</li><li>Linux</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p class="sub">Internships, teaching and clubs that shaped how I work.</p>
+    <div class="jobs">
+      <div class="job">
+        <img class="logo" src="public/HVTSP.png" alt="Sample Tech Co. logo">
+        <h3>TeachShare Technical Intern(HVTSP)</h3>
+        <span class="when">July 2025 – Aug 2025</span>
+        <p>With the Harvard Ventures Tech Summer Program, I had the priviledge to be a technical intern working with edtech startup TeachShare. I learned about startup through daily lectures, used Google Colab and tested 8+ LLM in Hugging Face; 
+          read 6+ research paper on learning strategy and outcomes; and created a worksheet generation chatbot tailored with effective learning strategies. I heard from guest speakers like Mark Cuban and led my group to present the final
+          project. </p>
+      </div>
+      <div class="job">
+        <img class="logo" src="public/kwkcertificate.png" alt="Kode With Klossy Data Science Scholar Certificate">
+        <h3>Kode With Klossy Data Science Scholar</h3>
+        <span class="when">July 2025 – July 2025</span>
+        <p>Learned about data analysis, data cleaning, and data visualiztion; Used Tableau to create visualizations on data analysis; Created a project exploring the relationship between SAT scores and family income (check it out in project section!)</p>
+      </div>
+      <div class="job">
+        <img class="logo" data-ph="wide" alt="Coding club logo">
+        <h3>XdHacks Mini Vancouver Executive Director</h3>
+        <span class="when">Oct 2024 – Jun 2026</span>
+        <p>One of BC's largest youth-led hackathon organization; Host annual hackathon for high school students; I was ambassador director in my first year, and executive director in my second year.
+          In charged of the ambassador team, and outreach to schools and students; Helped doubled the number of ambassadors and increased participants to 50+; Led the executive team to plan and run the 2026 hackathon (Hack Your Life);
+          Communicated with 10+ field professionals; Oversaw the entire event
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="sub">A few things I’ve built.</p>
+    <div class="grid">
+      <article class="card">
+        <img data-ph="wide" alt="StudyPlanner screenshot">
+        <div class="body">
+          <h3>StudyPlanner</h3>
+          <p>A web app that turns course syllabi into a weekly study schedule and sends reminders.</p>
+          <div class="tags">React, Node.js, PostgreSQL</div>
+          <a href="#" onclick="return false">View on GitHub</a>
+        </div>
+      </article>
+      <article class="card">
+        <img data-ph="wide" alt="PathFinder Visualizer screenshot">
+        <div class="body">
+          <h3>PathFinder Visualizer</h3>
+          <p>An interactive tool that animates pathfinding algorithms like A* and Dijkstra on a grid.</p>
+          <div class="tags">JavaScript, Canvas</div>
+          <a href="#" onclick="return false">View demo</a>
+        </div>
+      </article>
+      <article class="card">
+        <img data-ph="wide" alt="Bike share analysis chart">
+        <div class="body">
+          <h3>Campus Bike Share Analysis</h3>
+          <p>A data analysis of ride patterns that predicts bike demand by time of day and weather.</p>
+          <div class="tags">Python, pandas, scikit-learn</div>
+          <a href="#" onclick="return false">Read write-up</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Beyond the code</h2>
+    <p class="sub">Hackathons, climbing, baking and everything in between.</p>
+    <div class="gallery">
+      <img class="tall" data-ph="portrait" alt="Photo 1">
+      <img class="wide" data-ph="wide" alt="Photo 2">
+      <img data-ph="wide" alt="Photo 3">
+      <img data-ph="wide" alt="Photo 4">
+      <img class="wide" data-ph="wide" alt="Photo 5">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let’s work together</h2>
+    <p>I’m open to internships, research opportunities, and interesting side projects. The easiest way to reach me is by email.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:alex@example.com">alex@example.com</a>
+      <a class="btn" href="#" onclick="return false">GitHub</a>
+      <a class="btn" href="#" onclick="return false">LinkedIn</a>
+      <a class="btn" href="#" onclick="return false">Résumé (PDF)</a>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Alex Chen</footer>
+
+<script>
+(function(){
+  /* To use your own photo, add a src to any <img data-ph="..."> (e.g. src="me.jpg") and it replaces the placeholder. */
+  var PH={
+    wide:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23D5DBE8'/%3E%3Ccircle cx='290' cy='95' r='28' fill='%23A9B4CC'/%3E%3Cpath d='M0 300l120-130 80 80 70-60 130 110z' fill='%23A9B4CC'/%3E%3C/svg%3E",
+    portrait:"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23D5DBE8'/%3E%3Ccircle cx='200' cy='190' r='70' fill='%23A9B4CC'/%3E%3Cpath d='M60 500c0-110 60-170 140-170s140 60 140 170z' fill='%23A9B4CC'/%3E%3C/svg%3E"
+  };
+  document.querySelectorAll('img[data-ph]').forEach(function(i){
+    if(!i.getAttribute('src'))i.src=PH[i.getAttribute('data-ph')]||PH.wide;
+    else i.removeAttribute('data-ph');
+  });
+  document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(e){
+    e.preventDefault();
+    var el=document.getElementById(a.getAttribute('data-go'));
+    if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
+  });});
+  var navLinks=document.querySelectorAll('nav a.link');
+  var ids=['about','experience','projects','gallery','contact'];
+  function onScroll(){
+    var cur='';
+    ids.forEach(function(id){if(document.getElementById(id).getBoundingClientRect().top<=140)cur=id;});
+    navLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-go')===cur);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var root=document.documentElement;
+  document.getElementById('theme').addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    root.setAttribute('data-theme',dark?'light':'dark');
+  });
+})();
+</script>
+</body>
+</html>
